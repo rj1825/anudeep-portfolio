@@ -8,7 +8,7 @@ This repository contains the official interactive professional portfolio of **Ro
 
 ## 🚀 Live Demo & Hosting
 The portfolio is hosted on GitHub Pages:  
-**[https://rj1825.github.io/anudeep-portfolio/](https://rj1825.github.io/anudeep-portfolio/)**
+**[https://rj1825.github.io/rohit-kumar-portfolio/](https://rj1825.github.io/rohit-kumar-portfolio/)**
 
 ## 📂 Repository Structure
 - `index.html` — Semantic, responsive portfolio layout and content.
