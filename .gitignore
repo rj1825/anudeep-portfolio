@@ -1,0 +1,4 @@
+# Assessment files and logs
+*.png
+.system_generated/
+*.log
