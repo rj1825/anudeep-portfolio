@@ -1,28 +1,28 @@
-# Kuncha Anudeep Durga Prasad — Portfolio
+# Rohit Kumar Kuncha — Cloud & DevOps Engineer Portfolio
 
-> **Corporate & Commercial Legal Counsel | Contract Governance & Dispute Resolution**  
-> LL.M. Candidate in Corporate & Commercial Laws, GITAM University School of Law | BBA LL.B. (Hons)
+> **Cloud & DevOps Engineer | Platform Engineer | SRE**  
+> Microsoft Azure • Docker • Kubernetes • CI/CD Pipelines • Java • Python • MLOps
 
 ## 📌 Overview
-This repository hosts the official interactive professional portfolio of **Kuncha Anudeep Durga Prasad**. It showcases professional competencies, five published legal research articles, internship experience across PSU heavy industry (RINL) and tech-enterprise collaboration (CORIZO x WIPRO), and an interactive contract clause audit demonstration.
+This repository contains the official interactive professional portfolio of **Rohit Kumar Kuncha**. It showcases end-to-end cloud infrastructure projects, multi-stage Azure DevOps CI/CD pipelines, automated Infrastructure as Code (PowerShell / Azure CLI), deep learning deployments (93% accuracy), and real-time pipeline simulators.
 
 ## 🚀 Live Demo & Hosting
-The portfolio is hosted on GitHub Pages:
+The portfolio is hosted on GitHub Pages:  
 **[https://rj1825.github.io/anudeep-portfolio/](https://rj1825.github.io/anudeep-portfolio/)**
 
 ## 📂 Repository Structure
 - `index.html` — Semantic, responsive portfolio layout and content.
-- `style.css` — Modern design system with Executive Dark / Light themes and gold accents.
-- `app.js` — Interactive features: contract clause simulator, modal views, category filtering, and theme toggle.
-- `resume.pdf` — Downloadable official curriculum vitae.
-- `profile.jpg` — Profile portrait image.
+- `style.css` — Modern developer design system with DevOps Dark / Light themes and cyan accents.
+- `app.js` — Interactive features: live animated CI/CD pipeline simulator, load balancer failover demo, MLOps demo, skills filtering, and theme toggle.
+- `resume.pdf` — Downloadable official curriculum vitae for Rohit Kumar Kuncha.
+- `profile.jpg` — Official profile picture.
 
-## ⚖️ Core Competencies
-- Contract Drafting, Vetting & Negotiation (NDAs, MSAs, SOWs, MoUs)
-- Corporate Governance & Companies Act 2013 Compliance
-- Arbitration & Conciliation Act, 1996 Procedures
-- Intellectual Property Rights (AI & IPR)
-- Litigation Support & Legal Precedent Research
+## ⚡ Core Highlights
+- **< 2 min MTTD** via automated Azure CI/CD smoke tests
+- **99.95% Target VM Availability** with Azure Availability Sets & Standard Load Balancers
+- **< 6 min IaC Provisioning** via PowerShell & Azure CLI automation
+- **93% Accuracy Deep Learning Pipeline** with U-Net lesion segmentation & ResNet-50 deployed in Docker with FastAPI
+- **Full Stack Acumen**: Java (OOP, JVM Memory, SOLID, Maven), Python, Node.js, SQL, Linux
 
 ---
-&copy; 2026 Kuncha Anudeep Durga Prasad.
+&copy; 2026 Rohit Kumar Kuncha. All Rights Reserved.
