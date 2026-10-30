@@ -1,825 +1,847 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rohit Kumar Kuncha | Cloud &amp; DevOps Engineer</title>
-  <meta name="description" content="Portfolio of Rohit Kumar Kuncha — Cloud & DevOps Engineer specializing in Azure, Docker, Kubernetes, CI/CD Pipelines, Infrastructure as Code, Java, and Machine Learning.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- Ambient Cloud Glows -->
-  <div class="ambient-glow glow-1"></div>
-  <div class="ambient-glow glow-2"></div>
-  <div class="ambient-glow glow-3"></div>
-
-  <!-- Top Notification Ribbon -->
-  <aside class="top-ribbon" aria-label="Availability Status">
-    <div class="container ribbon-content">
-      <span class="status-indicator">
-        <span class="pulse-dot"></span> Available for Cloud &amp; DevOps Engineer, SRE &amp; Platform Engineering Roles
-      </span>
-      <span class="ribbon-loc">📍 Visakhapatnam, AP &bull; Open to Pan-India Relocation &amp; Remote / Hybrid</span>
-    </div>
-  </aside>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="brand-logo" aria-label="Home">
-        <div class="logo-mark">&lt;/&gt;</div>
-        <div class="logo-text">
-          <span class="brand-name">Rohit Kumar Kuncha</span>
-          <span class="brand-subtitle">Cloud &amp; DevOps Engineer</span>
-        </div>
-      </a>
-
-      <div class="nav-links" id="navLinks">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills &amp; Tools</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#pipeline-demo" class="nav-link">Interactive CI/CD Demo</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#education" class="nav-link">Education &amp; Certs</a>
-        <a href="#contact" class="nav-link nav-btn-contact">Contact</a>
-      </div>
-
-      <div class="nav-actions">
-        <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
-          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
-
-        <a href="resume.pdf" download="Rohit_Kumar_Kuncha_DevOps_Resume.pdf" class="btn btn-sm btn-outline nav-resume-btn" title="Download Official Resume">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          <span>Resume</span>
-        </a>
-
-        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Mobile Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero-section" id="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="badge-pill">
-          <span class="badge-icon">⚡</span> Cloud &bull; DevOps &bull; Automation &bull; MLOps
-        </div>
-
-        <h1 class="hero-title">
-          Building Resilient <span class="cyan-gradient">Cloud Architectures</span> &amp; Zero-Touch CI/CD Pipelines.
-        </h1>
-
-        <p class="hero-lead">
-          I am <strong>Rohit Kumar Kuncha</strong>, a technology engineer specializing in <strong>Microsoft Azure</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, and <strong>automated multi-stage CI/CD deployments</strong>. Combining strong backend software engineering in <strong>Java</strong> &amp; <strong>Python</strong> with hands-on <strong>Infrastructure as Code (IaC)</strong> and <strong>Deep Learning (93% accuracy)</strong>.
-        </p>
-
-        <!-- Core Production Metrics Highlight Bar -->
-        <div class="hero-highlights-strip">
-          <div class="hh-item">
-            <span class="hh-val">&lt; 2 min</span>
-            <span class="hh-lbl">MTTD via CI/CD Smoke Tests</span>
-          </div>
-          <div class="hh-item">
-            <span class="hh-val">99.95%</span>
-            <span class="hh-lbl">Target SLA with Azure Availability Sets</span>
-          </div>
-          <div class="hh-item">
-            <span class="hh-val">&lt; 6 min</span>
-            <span class="hh-lbl">Automated IaC Cloud Provisioning</span>
-          </div>
-          <div class="hh-item">
-            <span class="hh-val">93%</span>
-            <span class="hh-lbl">Deep Learning Classification Accuracy</span>
-          </div>
-        </div>
-
-        <div class="hero-actions">
-          <a href="#pipeline-demo" class="btn btn-primary">
-            <span>Explore Interactive CI/CD Demo</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          </a>
-          <a href="resume.pdf" download="Rohit_Kumar_Kuncha_DevOps_Resume.pdf" class="btn btn-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            <span>Download Official Resume</span>
-          </a>
-          <a href="https://github.com/rj1825" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            <span>GitHub @rj1825</span>
-          </a>
-        </div>
-
-        <div class="hero-contact-strip">
-          <a href="mailto:kuncharohitkumar2@gmail.com" class="c-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>kuncharohitkumar2@gmail.com</span>
-          </a>
-          <a href="tel:+916281224094" class="c-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>+91 62812 24094</span>
-          </a>
-          <a href="https://www.linkedin.com/in/rohitkumarkuncha" target="_blank" rel="noopener noreferrer" class="c-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            <span>LinkedIn</span>
-          </a>
-          <span class="c-link copy-action" id="copyContactBtn" title="Click to copy full contact card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span id="copyContactText">Copy Card</span>
-          </span>
-        </div>
-      </div>
-
-      <!-- Hero Visual Profile Card -->
-      <div class="hero-visual">
-        <div class="profile-card glass-panel">
-          <div class="profile-frame">
-            <img src="profile.jpg" alt="Rohit Kumar Kuncha" class="profile-photo" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=640&q=80';">
-            <div class="frame-tag">DevOps Engineer</div>
-          </div>
-
-          <div class="profile-body">
-            <h3 class="profile-name">Rohit Kumar Kuncha</h3>
-            <p class="profile-credentials">B.Tech CSE &bull; Cloud &amp; DevOps Specialist</p>
-
-            <div class="profile-stat-grid">
-              <div class="p-stat">
-                <span class="stat-number">Azure</span>
-                <span class="stat-label">Cloud Primary</span>
-              </div>
-              <div class="p-stat">
-                <span class="stat-number">Docker</span>
-                <span class="stat-label">&amp; Kubernetes</span>
-              </div>
-              <div class="p-stat">
-                <span class="stat-number">CI/CD</span>
-                <span class="stat-label">YAML Automation</span>
-              </div>
-            </div>
-
-            <div class="profile-tags">
-              <span class="tag">Azure Pipelines</span>
-              <span class="tag">ACR &amp; App Services</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Kubernetes</span>
-              <span class="tag">PowerShell IaC</span>
-              <span class="tag">Java &amp; Python</span>
-              <span class="tag">PyTorch MLOps</span>
-            </div>
-
-            <div class="terminal-micro">
-              <div class="term-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span> rohit@azure-devops:~</div>
-              <div class="term-line"><span class="prompt">$</span> az deployment group create --template-file infra.bicep</div>
-              <div class="term-line success">&gt; Provisioning: 100% | VMs: 2/2 Healthy | ALB: Active</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Value Drivers: What Makes Rohit Stand Out to Engineering Teams -->
-  <section class="section enterprise-value-section" id="about">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-eyebrow">Candidate Value &amp; Engineering Mindset</span>
-        <h2 class="section-title">What I Bring to Modern Engineering Teams</h2>
-        <p class="section-sub">Bridging customer-centric reliability with resilient cloud automation, Infrastructure as Code, and production-tested CI/CD pipelines.</p>
-        <div class="section-line mx-auto"></div>
-      </div>
-
-      <div class="value-matrix-grid">
-        <div class="val-card glass-panel">
-          <div class="val-header">
-            <span class="val-num">01</span>
-            <span class="val-badge">CI/CD Automation</span>
-          </div>
-          <h3>Zero-Touch Automated Delivery Pipelines</h3>
-          <p>Tired of manual releases and deployment drift? I architect multi-stage Azure Pipelines YAML workflows that automate linting, Docker image building, ACR versioning, and zero-downtime rollouts.</p>
-          <ul class="val-points">
-            <li>Integrated automated smoke tests reducing MTTD to &lt; 2 minutes</li>
-            <li>Multi-stage environment promotion (Dev &rarr; Staging &rarr; Production) with approval gates</li>
-            <li>Lightweight Nginx Docker images hardened with OWASP security headers</li>
-          </ul>
-        </div>
-
-        <div class="val-card glass-panel">
-          <div class="val-header">
-            <span class="val-num">02</span>
-            <span class="val-badge">High Availability</span>
-          </div>
-          <h3>99.95% Resilient Cloud Infrastructure</h3>
-          <p>Designing infrastructure for fault-tolerance. Skilled in configuring Azure Availability Sets, Standard Load Balancers with TCP health probes, and isolated Network Security Groups (NSGs).</p>
-          <ul class="val-points">
-            <li>Automated VM &amp; network provisioning via PowerShell and Azure CLI in under 6 minutes</li>
-            <li>Traffic redirection around unhealthy instances using automated health probes</li>
-            <li>Strict Entra ID RBAC resource group isolation to enforce least privilege</li>
-          </ul>
-        </div>
-
-        <div class="val-card glass-panel">
-          <div class="val-header">
-            <span class="val-num">03</span>
-            <span class="val-badge">Developer-First</span>
-          </div>
-          <h3>Deep Programming Acumen (Java &amp; Python)</h3>
-          <p>Unlike pure ops administrators, I understand application code. Proficient in Java OOP, JVM memory management, Maven/Gradle, and Python backend services, making collaboration with devs seamless.</p>
-          <ul class="val-points">
-            <li>Debugs container memory leaks, JVM heap allocations, and garbage collection</li>
-            <li>Builds RESTful Node.js and Python FastAPI microservices</li>
-            <li>Writes maintainable automated tests and deployment health checks</li>
-          </ul>
-        </div>
-
-        <div class="val-card glass-panel">
-          <div class="val-header">
-            <span class="val-num">04</span>
-            <span class="val-badge">MLOps &amp; AI</span>
-          </div>
-          <h3>Production MLOps &amp; Deep Learning Deployments</h3>
-          <p>Developed and deployed an end-to-end cattle disease diagnostic platform (93% accuracy) with U-Net lesion segmentation and ResNet-50 transfer learning, containerized in Docker with FastAPI on AWS S3.</p>
-          <ul class="val-points">
-            <li>Containerized model inference workflows with sub-second API responses</li>
-            <li>Dataset preprocessing, normalization, and balanced loss functions</li>
-            <li>Model checkpointing and cloud artifact management</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive CI/CD Pipeline Simulator (SHOW COMPANIES WHAT HE'S WORTH) -->
-  <section class="section pipeline-demo-section" id="pipeline-demo">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-eyebrow">Interactive Live Simulator</span>
-        <h2 class="section-title">Experience Rohit&rsquo;s Cloud &amp; DevOps Pipelines in Action</h2>
-        <p class="section-sub">Trigger simulated live pipelines to watch code linting, Docker builds, Azure Container Registry pushes, load-balancer failovers, and MLOps inference.</p>
-        <div class="section-line mx-auto"></div>
-      </div>
-
-      <div class="pipeline-widget glass-panel">
-        <div class="widget-toolbar">
-          <div class="pipeline-switcher">
-            <button class="pipe-tab active" data-pipe="cicd">1. Azure DevOps CI/CD Pipeline</button>
-            <button class="pipe-tab" data-pipe="ha">2. Azure High-Availability Load Balancer</button>
-            <button class="pipe-tab" data-pipe="mlops">3. Deep Learning MLOps (93% Accuracy)</button>
-          </div>
-          <button class="btn btn-sm btn-primary" id="runPipelineBtn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            <span id="runBtnLabel">Run Live Simulation</span>
-          </button>
-        </div>
-
-        <div class="pipeline-content" id="pipelineContent">
-          <!-- Dynamically generated via app.js -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Technical Skills & Stack Grid -->
-  <section class="section skills-section" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">Technical Competencies</span>
-        <h2 class="section-title">Skills, Tools &amp; Technologies</h2>
-        <p class="section-sub">A verified engineering stack combining cloud platforms, container orchestrators, IaC tooling, and programming languages.</p>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="skills-filter">
-        <button class="s-filter-btn active" data-filter="all">All Disciplines</button>
-        <button class="s-filter-btn" data-filter="cloud">Cloud &amp; DevOps</button>
-        <button class="s-filter-btn" data-filter="prog">Programming &amp; Backend</button>
-        <button class="s-filter-btn" data-filter="data">Data &amp; Machine Learning</button>
-        <button class="s-filter-btn" data-filter="ops">SysAdmin &amp; Operations</button>
-      </div>
-
-      <div class="skills-grid" id="skillsGrid">
-        
-        <!-- Cloud & DevOps -->
-        <div class="skill-card" data-cat="cloud">
-          <div class="skill-icon">☁️</div>
-          <h3>Microsoft Azure</h3>
-          <p>Azure DevOps, Azure Container Registry (ACR), Azure App Services, Standard Load Balancers, Availability Sets, Entra ID (Azure AD), Role-Based Access Control (RBAC).</p>
-          <div class="skill-tags">
-            <span>Azure DevOps</span>
-            <span>ACR</span>
-            <span>App Services</span>
-            <span>Load Balancer</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-cat="cloud">
-          <div class="skill-icon">🐳</div>
-          <h3>Docker &amp; Containers</h3>
-          <p>Multi-stage Docker builds, lightweight Nginx web servers, image optimization, security hardening with custom HTTP headers, container lifecycle management, Docker Compose.</p>
-          <div class="skill-tags">
-            <span>Multi-Stage Builds</span>
-            <span>Nginx Containers</span>
-            <span>Security Hardening</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-cat="cloud">
-          <div class="skill-icon">☸️</div>
-          <h3>Kubernetes &amp; Orchestration</h3>
-          <p>Deployments, Pods, Services, ConfigMaps, Secrets, horizontal pod autoscaling principles, ingress controllers, cluster service networking, and rolling zero-downtime updates.</p>
-          <div class="skill-tags">
-            <span>Deployments</span>
-            <span>Services</span>
-            <span>Cluster Architecture</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-cat="cloud">
-          <div class="skill-icon">⚙️</div>
-          <h3>CI/CD Pipeline Automation</h3>
-          <p>Azure Pipelines YAML, multi-stage pipelines (Build &rarr; Test &rarr; Release), environment promotion with manual approval gates, automated smoke tests (&lt;2 min MTTD).</p>
-          <div class="skill-tags">
-            <span>Azure Pipelines YAML</span>
-            <span>Smoke Testing</span>
-            <span>Release Gates</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-cat="cloud">
-          <div class="skill-icon">📜</div>
-          <h3>Infrastructure as Code (IaC)</h3>
-          <p>PowerShell scripting and Azure CLI automation provisioning complete virtual networks, firewalls, subnets, and load balancers in under 6 minutes from a single command.</p>
-          <div class="skill-tags">
-            <span>PowerShell</span>
-            <span>Azure CLI</span>
-            <span>Network Automation</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-cat="cloud">
-          <div class="skill-icon">🟧</div>
-          <h3>Amazon Web Services (AWS)</h3>
-          <p>VPC network design, EC2 instances, Application Load Balancers (ALB), Auto Scaling groups, Amazon RDS (Multi-AZ), S3 bucket storage, and event-driven Lambda/SQS/SNS workflows.</p>
-          <div class="skill-tags">
-            <span>VPC &bull; EC2</span>
-            <span>ALB &bull; Auto Scaling</span>
-            <span>S3 &bull; RDS</span>
-          </div>
-        </div>
-
-        <!-- Programming & Backend -->
-        <div class="skill-card" data-cat="prog">
-          <div class="skill-icon">☕</div>
-          <h3>Java Development</h3>
-          <p>Object-Oriented Programming (OOP), SOLID design principles, exception handling, JVM memory architecture &amp; Garbage Collection tuning, Maven &amp; Gradle build systems.</p>
-          <div class="skill-tags">
-            <span>Java Full Stack</span>
-            <span>JVM &bull; GC Tuning</span>
-            <span>SOLID &bull; Maven</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-cat="prog">
-          <div class="skill-icon">🐍</div>
-          <h3>Python &amp; FastAPI</h3>
-          <p>Python 3 scripting for automation, FastAPI and Flask microservice APIs, data handling, PyTorch deep learning integration, and cloud automation utilities.</p>
-          <div class="skill-tags">
-            <span>Python 3</span>
-            <span>FastAPI</span>
-            <span>PyTorch</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-cat="prog">
-          <div class="skill-icon">🌐</div>
-          <h3>JavaScript &amp; Node.js</h3>
-          <p>Modern ES6+ JavaScript, Node.js backend development, asynchronous event loops (Promises, Async/Await), RESTful APIs, JSON parsing, Express.js web services.</p>
-          <div class="skill-tags">
-            <span>Node.js</span>
-            <span>REST APIs</span>
-            <span>Express</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-cat="prog">
-          <div class="skill-icon">🗄️</div>
-          <h3>SQL &amp; Relational Databases</h3>
-          <p>PostgreSQL, MySQL, relational schema modeling, advanced joins, Common Table Expressions (CTEs), query performance optimization, and database indexing.</p>
-          <div class="skill-tags">
-            <span>PostgreSQL</span>
-            <span>MySQL</span>
-            <span>Query Optimization</span>
-          </div>
-        </div>
-
-        <!-- Data & Machine Learning -->
-        <div class="skill-card" data-cat="data">
-          <div class="skill-icon">🧠</div>
-          <h3>Deep Learning &amp; Computer Vision</h3>
-          <p>Convolutional Neural Networks (CNNs), U-Net architectures for semantic segmentation, ResNet-50 transfer learning, custom loss functions (Dice Loss, Weighted Cross-Entropy).</p>
-          <div class="skill-tags">
-            <span>U-Net</span>
-            <span>ResNet-50</span>
-            <span>PyTorch</span>
-            <span>93% Accuracy</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-cat="data">
-          <div class="skill-icon">📊</div>
-          <h3>Power BI &amp; Analytics</h3>
-          <p>Interactive dashboard creation, Power Query data transformation, DAX calculated measures, multi-table dimensional data modeling, and business KPI tracking.</p>
-          <div class="skill-tags">
-            <span>Power BI</span>
-            <span>DAX</span>
-            <span>Power Query</span>
-          </div>
-        </div>
-
-        <!-- SysAdmin & Operations -->
-        <div class="skill-card" data-cat="ops">
-          <div class="skill-icon">🐧</div>
-          <h3>Linux System Administration</h3>
-          <p>Ubuntu and CentOS package management, bash shell scripting, systemctl service daemons, SSH key configuration, file permissions, vim editor, and server hardening.</p>
-          <div class="skill-tags">
-            <span>Bash Scripting</span>
-            <span>Systemctl</span>
-            <span>SSH &bull; Hardening</span>
-          </div>
-        </div>
-
-        <div class="skill-card" data-cat="ops">
-          <div class="skill-icon">🎧</div>
-          <h3>Enterprise Customer Operations</h3>
-          <p>Experience at Teleperformance: First Contact Resolution (FCR), de-escalation of complex technical inquiries, CRM workflows, strict compliance protocols, CSAT and AHT metrics.</p>
-          <div class="skill-tags">
-            <span>Teleperformance</span>
-            <span>FCR &bull; CSAT</span>
-            <span>De-escalation</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Technical Projects -->
-  <section class="section projects-section" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">Production Portfolio</span>
-        <h2 class="section-title">Featured DevOps &amp; Engineering Projects</h2>
-        <p class="section-sub">Real-world implementations solving uptime, deployment speed, automated testing, and scalable architecture challenges.</p>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="projects-grid">
-        
-        <!-- Project 1: Space Defender Azure CI/CD -->
-        <div class="project-card glass-panel">
-          <div class="proj-badge azure-badge">Azure DevOps &bull; CI/CD &bull; Containers</div>
-          <h3 class="proj-title">Space Defender &mdash; End-to-End Azure DevOps CI/CD Pipeline</h3>
-          <p class="proj-time">2026 &bull; Cloud Automation</p>
-          <p class="proj-desc">
-            Engineered a completely automated multi-stage build-and-release pipeline using Azure Pipelines YAML that triggers automatically on code pushes with zero manual intervention.
-          </p>
-          <ul class="proj-features">
-            <li>Packaged the HTML5/JS app into a lightweight Nginx Docker container hardened with custom security headers.</li>
-            <li>Automated building, version tagging, and pushing Docker images to Azure Container Registry (ACR).</li>
-            <li>Configured secure Azure DevOps service connections using Entra ID service principals with scoped permissions.</li>
-            <li>Implemented automated post-deployment smoke tests that reduced Mean Time to Detect (MTTD) failed deployments to under 2 minutes.</li>
-          </ul>
-          <div class="proj-tech-stack">
-            <span>Azure DevOps YAML</span>
-            <span>Docker</span>
-            <span>Azure Container Registry</span>
-            <span>Azure App Services</span>
-            <span>Entra ID</span>
-            <span>Smoke Testing</span>
-          </div>
-        </div>
-
-        <!-- Project 2: High Availability Load-Balanced Azure Infra -->
-        <div class="project-card glass-panel">
-          <div class="proj-badge ia-badge">Infrastructure as Code &bull; High Availability</div>
-          <h3 class="proj-title">High-Availability Load-Balanced Web Infrastructure on Azure</h3>
-          <p class="proj-time">2026 &bull; Cloud Resilience</p>
-          <p class="proj-desc">
-            Authored PowerShell and Azure CLI automation scripts provisioning full cloud infrastructure (virtual network, subnets, VMs, firewalls, and load balancer) in under 6 minutes.
-          </p>
-          <ul class="proj-features">
-            <li>Grouped VMs in an Azure Availability Set to protect uptime against hardware host failures, targeting 99.95% SLA.</li>
-            <li>Deployed Azure Standard Load Balancer with TCP health probes routing traffic dynamically away from unhealthy instances.</li>
-            <li>Enforced strict Network Security Group (NSG) ingress/egress rules isolating VMs from direct public internet exposure.</li>
-            <li>Applied Azure RBAC via Entra ID, granting least-privilege operations access strictly scoped to the resource group.</li>
-          </ul>
-          <div class="proj-tech-stack">
-            <span>PowerShell IaC</span>
-            <span>Azure CLI</span>
-            <span>Azure Standard ALB</span>
-            <span>Availability Sets</span>
-            <span>NSG Firewalls</span>
-            <span>RBAC</span>
-          </div>
-        </div>
-
-        <!-- Project 3: Lumpy Skin Disease Detection (MLOps) -->
-        <div class="project-card glass-panel">
-          <div class="proj-badge ml-badge">Deep Learning &bull; Computer Vision &bull; MLOps</div>
-          <h3 class="proj-title">Automated Cattle Disease Detection &amp; Segmentation Platform</h3>
-          <p class="proj-time">2023 &bull; AI / MLOps</p>
-          <p class="proj-desc">
-            Designed and trained a two-stage deep learning pipeline for automated cattle skin disease detection across a dataset of 5,000+ high-resolution images, achieving 93% accuracy.
-          </p>
-          <ul class="proj-features">
-            <li>Engineered a U-Net architecture for precision lesion segmentation and a pre-trained ResNet-50 for disease classification.</li>
-            <li>Trained models using combined Binary Cross-Entropy/Dice Loss and Weighted Cross-Entropy to handle class imbalance.</li>
-            <li>Containerized the PyTorch inference engine in Docker and exposed it via a high-performance FastAPI service.</li>
-            <li>Managed model checkpoints and training artifacts seamlessly in AWS S3 object storage.</li>
-          </ul>
-          <div class="proj-tech-stack">
-            <span>PyTorch</span>
-            <span>U-Net</span>
-            <span>ResNet-50</span>
-            <span>Docker</span>
-            <span>FastAPI</span>
-            <span>AWS S3</span>
-            <span>93% Accuracy</span>
-          </div>
-        </div>
-
-        <!-- Project 4: AWS 3-Tier Application Deployment -->
-        <div class="project-card glass-panel">
-          <div class="proj-badge aws-badge">AWS Architecture &bull; Scalability</div>
-          <h3 class="proj-title">AWS 3-Tier Enterprise Scalable Architecture</h3>
-          <p class="proj-time">2025 &bull; Hands-on Production Training (PaperLive)</p>
-          <p class="proj-desc">
-            Designed and deployed a production-grade 3-tier web architecture on AWS spanning public and private subnets across multiple Availability Zones.
-          </p>
-          <ul class="proj-features">
-            <li>Configured custom VPC, EC2 Auto Scaling groups, Application Load Balancer (ALB), and Amazon RDS MySQL Multi-AZ.</li>
-            <li>Implemented event-driven serverless messaging with AWS Lambda, SQS, and SNS to decouple application workloads.</li>
-            <li>Ensured database and backend tiers are strictly unreachable from the public web via private security groups.</li>
-          </ul>
-          <div class="proj-tech-stack">
-            <span>AWS VPC</span>
-            <span>EC2 Auto Scaling</span>
-            <span>ALB</span>
-            <span>Amazon RDS</span>
-            <span>Lambda &bull; SQS &bull; SNS</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Experience Timeline -->
-  <section class="section experience-section" id="experience">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">Professional History</span>
-        <h2 class="section-title">Work Experience &amp; Industry Exposure</h2>
-        <p class="section-sub">Real-world operational expertise handling high-pressure client requirements, incident resolution, and compliance protocols.</p>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card glass-panel">
-            <div class="t-card-header">
-              <div class="t-role-info">
-                <span class="t-badge tp-badge">Enterprise Operations &amp; Support</span>
-                <h3 class="t-title">Customer Service Executive</h3>
-                <h4 class="t-company">Teleperformance &bull; Hyderabad, Telangana, India</h4>
-              </div>
-              <div class="t-period">Nov 2024 &ndash; Nov 2025</div>
-            </div>
-
-            <p class="t-summary">
-              Handled mission-critical customer operations in a high-volume enterprise environment, managing technical, account, and billing escalations while enforcing strict data security protocols.
-            </p>
-
-            <ul class="t-duties">
-              <li><strong>First Contact Resolution (FCR):</strong> Resolved technical and billing issues on first contact, eliminating recurring repeat tickets.</li>
-              <li><strong>Incident De-escalation:</strong> Applied active problem diagnosis and clear communication to turn high-stress operational escalations into positive resolutions.</li>
-              <li><strong>Security &amp; Verification Compliance:</strong> Strictly adhered to mandatory customer data verification protocols and data protection guidelines.</li>
-              <li><strong>CRM Documentation:</strong> Maintained comprehensive, accurate incident notes and resolution steps in enterprise CRM systems.</li>
-              <li><strong>Performance Metrics:</strong> Consistently achieved Average Handle Time (AHT) and Customer Satisfaction (CSAT) quality targets.</li>
-            </ul>
-
-            <div class="t-skills-tags">
-              <span>Incident Resolution</span>
-              <span>CRM Systems</span>
-              <span>Compliance Protocols</span>
-              <span>FCR &bull; CSAT &bull; AHT</span>
-              <span>Communication</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education & Certifications -->
-  <section class="section education-section" id="education">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">Credentials &amp; Education</span>
-        <h2 class="section-title">Academic Background &amp; Certifications</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="edu-grid">
-        <div class="edu-card glass-panel featured-edu">
-          <div class="edu-badge">Degree</div>
-          <span class="edu-year">Graduated Jun 2024</span>
-          <h3 class="edu-degree">B.Tech in Computer Science &amp; Engineering</h3>
-          <h4 class="edu-inst">Visakha Institute of Engineering and Technology (VIET) &bull; Narava, Visakhapatnam</h4>
-          <p class="edu-details">
-            Rigorous 4-year curriculum covering Algorithms, Operating Systems, Computer Networks, Database Management Systems, Software Engineering, and Machine Learning.
-          </p>
-        </div>
-
-        <div class="edu-card glass-panel">
-          <div class="edu-badge">Technical Diploma</div>
-          <span class="edu-year">Graduated Apr 2020</span>
-          <h3 class="edu-degree">Diploma in Electrical &amp; Electronics Engineering (DEEE)</h3>
-          <h4 class="edu-inst">Behara Technical Campus &bull; Narava, Visakhapatnam</h4>
-          <p class="edu-details">
-            Strong foundation in digital electronics, circuit theory, electrical machines, instrumentation, and analytical logic.
-          </p>
-        </div>
-      </div>
-
-      <!-- Certifications Grid -->
-      <div class="certs-grid" style="margin-top: 2.5rem;">
-        <div class="cert-card glass-panel">
-          <div class="cert-icon">☁️</div>
-          <div class="cert-content">
-            <h4>AWS Cloud Practitioner Essentials</h4>
-            <p class="cert-issuer">Amazon Web Services (AWS Skill Builder) &bull; Jun 2026</p>
-            <p class="cert-desc">Verified fundamental mastery of AWS Cloud infrastructure, core services (EC2, S3, RDS, VPC), cloud security, pricing models, and cloud architectural best practices.</p>
-          </div>
-        </div>
-
-        <div class="cert-card glass-panel">
-          <div class="cert-icon">🚀</div>
-          <div class="cert-content">
-            <h4>DevOps, AWS, Azure &amp; GCP Certification</h4>
-            <p class="cert-issuer">PaperLive Learning &bull; 2025</p>
-            <p class="cert-desc">Comprehensive hands-on training across multi-cloud deployments, Docker containerization, Kubernetes clusters, Jenkins &amp; Azure DevOps CI/CD pipelines.</p>
-          </div>
-        </div>
-
-        <div class="cert-card glass-panel">
-          <div class="cert-icon">☕</div>
-          <div class="cert-content">
-            <h4>Java Full Stack Development Certification</h4>
-            <p class="cert-issuer">Professional Course Certification</p>
-            <p class="cert-desc">Mastery of Core Java, OOP principles, RESTful microservices, MySQL databases, frontend HTML/CSS/JavaScript, and Maven dependency management.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & Hiring Section -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <div class="contact-card glass-panel">
-        <div class="contact-header text-center">
-          <span class="section-eyebrow">Let&rsquo;s Connect</span>
-          <h2 class="section-title">Ready to Accelerate Your Cloud Infrastructure</h2>
-          <p class="section-sub">
-            Actively seeking entry-to-mid level roles: <strong>Cloud Engineer</strong>, <strong>DevOps Engineer</strong>, <strong>SRE</strong>, or <strong>Platform Engineer</strong>.
-          </p>
-          <div class="section-line mx-auto"></div>
-        </div>
-
-        <div class="contact-grid">
-          <!-- Contact Info Column -->
-          <div class="contact-info-col">
-            <h3>Direct Contact Channels</h3>
-            <p>I am available for interviews and prompt discussions regarding full-time engineering opportunities.</p>
-
-            <div class="contact-methods">
-              <a href="mailto:kuncharohitkumar2@gmail.com" class="c-method-item">
-                <div class="cm-icon">✉️</div>
-                <div class="cm-content">
-                  <span class="cm-label">Primary Email</span>
-                  <span class="cm-val">kuncharohitkumar2@gmail.com</span>
-                </div>
-              </a>
-
-              <a href="tel:+916281224094" class="c-method-item">
-                <div class="cm-icon">📞</div>
-                <div class="cm-content">
-                  <span class="cm-label">Direct Phone / WhatsApp</span>
-                  <span class="cm-val">+91 62812 24094</span>
-                </div>
-              </a>
-
-              <a href="https://github.com/rj1825" target="_blank" rel="noopener noreferrer" class="c-method-item">
-                <div class="cm-icon">💻</div>
-                <div class="cm-content">
-                  <span class="cm-label">GitHub Profile</span>
-                  <span class="cm-val">github.com/rj1825</span>
-                </div>
-              </a>
-
-              <a href="https://www.linkedin.com/in/rohitkumarkuncha" target="_blank" rel="noopener noreferrer" class="c-method-item">
-                <div class="cm-icon">🔗</div>
-                <div class="cm-content">
-                  <span class="cm-label">LinkedIn Profile</span>
-                  <span class="cm-val">linkedin.com/in/rohitkumarkuncha</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="resume-download-box">
-              <h4>Download Official Resume</h4>
-              <p>Get a complete copy of Rohit Kumar Kuncha's verified DevOps &amp; Cloud resume in PDF format.</p>
-              <a href="resume.pdf" download="Rohit_Kumar_Kuncha_DevOps_Resume.pdf" class="btn btn-primary btn-block">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                <span>Download Resume (PDF)</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Direct Inquiry Form -->
-          <div class="contact-form-col">
-            <h3>Send an Interview Proposal or Message</h3>
-            <form id="contactForm" onsubmit="handleContactSubmit(event)">
-              <div class="form-group">
-                <label for="cName">Your Name / Recruiter Name</label>
-                <input type="text" id="cName" class="form-control" placeholder="e.g. Alex Johnson (Engineering Lead)" required>
-              </div>
-
-              <div class="form-group">
-                <label for="cOrg">Company / Organization</label>
-                <input type="text" id="cOrg" class="form-control" placeholder="e.g. CloudTech Systems / FinTech Corp" required>
-              </div>
-
-              <div class="form-group">
-                <label for="cEmail">Your Work Email</label>
-                <input type="email" id="cEmail" class="form-control" placeholder="recruiter@company.com" required>
-              </div>
-
-              <div class="form-group">
-                <label for="cRole">Role Opportunity</label>
-                <select id="cRole" class="form-control">
-                  <option value="DevOps Engineer">DevOps Engineer</option>
-                  <option value="Cloud Engineer (Azure/AWS)">Cloud Engineer (Azure / AWS)</option>
-                  <option value="Site Reliability Engineer (SRE)">Site Reliability Engineer (SRE)</option>
-                  <option value="Platform Engineer">Platform Engineer</option>
-                  <option value="Java Full Stack / Software Engineer">Software Engineer / Java Backend</option>
-                  <option value="Machine Learning / MLOps Engineer">MLOps / Machine Learning Engineer</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="cMessage">Message / Interview Schedule</label>
-                <textarea id="cMessage" class="form-control" rows="4" placeholder="Hi Rohit, we reviewed your Azure CI/CD and IaC projects. We'd like to schedule an interview..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-block">
-                <span>Send via Email Client</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              </button>
-            </form>
-            <div id="formFeedback" class="form-feedback hidden"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-left">
-        <div class="f-brand">&lt;/&gt; Rohit Kumar Kuncha</div>
-        <p class="f-tagline">Cloud &amp; DevOps Engineer &bull; Azure &bull; Docker &bull; Kubernetes &bull; CI/CD</p>
-      </div>
-
-      <div class="footer-right">
-        <p>&copy; 2026 Rohit Kumar Kuncha. Hosted on GitHub Pages.</p>
-        <p class="f-note">Visakhapatnam, Andhra Pradesh, India &bull; <a href="https://github.com/rj1825" style="color:var(--cyan-primary);">@rj1825</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Toast Notification -->
-  <div id="toast" class="toast hidden"></div>
-
-  <script src="app.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Kumar Kuncha | Cloud &amp; DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Rohit Kumar Kuncha — Cloud & DevOps Engineer specializing in Azure, Docker, Kubernetes, CI/CD Pipelines, Infrastructure as Code, Java, and Machine Learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Cloud Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Top Notification Ribbon -->
+  <aside class="top-ribbon" aria-label="Availability Status">
+    <div class="container ribbon-content">
+      <span class="status-indicator">
+        <span class="pulse-dot"></span> Available for Cloud &amp; DevOps Engineer, SRE &amp; Platform Engineering Roles
+      </span>
+      <span class="ribbon-loc">📍 Visakhapatnam, AP &bull; Open to Pan-India Relocation &amp; Remote / Hybrid</span>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Home">
+        <div class="logo-mark">&lt;/&gt;</div>
+        <div class="logo-text">
+          <span class="brand-name">Rohit Kumar Kuncha</span>
+          <span class="brand-subtitle">Cloud &amp; DevOps Engineer</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills &amp; Tools</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#pipeline-demo" class="nav-link">Interactive CI/CD Demo</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education &amp; Certs</a>
+        <a href="#contact" class="nav-link nav-btn-contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <a href="resume.pdf" download="Rohit_Kumar_Kuncha_DevOps_Resume.pdf" class="btn btn-sm btn-outline nav-resume-btn" title="Download Official Resume">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Resume</span>
+        </a>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Mobile Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="badge-icon">⚡</span> Cloud &bull; DevOps &bull; Automation &bull; MLOps
+        </div>
+
+        <h1 class="hero-title">
+          Building Resilient <span class="cyan-gradient">Cloud Architectures</span> &amp; Zero-Touch CI/CD Pipelines.
+        </h1>
+
+        <p class="hero-lead">
+          I am <strong>Rohit Kumar Kuncha</strong>, a technology engineer specializing in <strong>Microsoft Azure</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, and <strong>automated multi-stage CI/CD deployments</strong>. Combining strong backend software engineering in <strong>Java</strong> &amp; <strong>Python</strong> with hands-on <strong>Infrastructure as Code (IaC)</strong> and <strong>Deep Learning (93% accuracy)</strong>.
+        </p>
+
+        <!-- Core Production Metrics Highlight Bar -->
+        <div class="hero-highlights-strip">
+          <div class="hh-item">
+            <span class="hh-val">&lt; 2 min</span>
+            <span class="hh-lbl">MTTD via CI/CD Smoke Tests</span>
+          </div>
+          <div class="hh-item">
+            <span class="hh-val">99.95%</span>
+            <span class="hh-lbl">Target SLA with Azure Availability Sets</span>
+          </div>
+          <div class="hh-item">
+            <span class="hh-val">&lt; 6 min</span>
+            <span class="hh-lbl">Automated IaC Cloud Provisioning</span>
+          </div>
+          <div class="hh-item">
+            <span class="hh-val">93%</span>
+            <span class="hh-lbl">Deep Learning Classification Accuracy</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#pipeline-demo" class="btn btn-primary">
+            <span>Explore Interactive CI/CD Demo</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </a>
+          <a href="resume.pdf" download="Rohit_Kumar_Kuncha_DevOps_Resume.pdf" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download Official Resume</span>
+          </a>
+          <a href="https://github.com/rj1825" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub @rj1825</span>
+          </a>
+        </div>
+
+        <div class="hero-contact-strip">
+          <a href="mailto:kuncharohitkumar2@gmail.com" class="c-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>kuncharohitkumar2@gmail.com</span>
+          </a>
+          <a href="tel:+916281224094" class="c-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 62812 24094</span>
+          </a>
+          <a href="https://www.linkedin.com/in/rohitkumarkuncha" target="_blank" rel="noopener noreferrer" class="c-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <span class="c-link copy-action" id="copyContactBtn" title="Click to copy full contact card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span id="copyContactText">Copy Card</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Hero Visual Profile Card -->
+      <div class="hero-visual" id="heroVisual">
+        <div class="profile-card glass-panel" id="interactiveProfileCard">
+          
+          <!-- Interactive Avatar Switcher (Tech Avatar / Real Photo) -->
+          <div class="avatar-switcher">
+            <button type="button" class="switch-btn active" id="btnSwitchAnime">⚡ Tech Avatar</button>
+            <button type="button" class="switch-btn" id="btnSwitchReal">📷 Real Photo</button>
+          </div>
+
+          <div class="profile-frame interactive-stage" id="profileStage">
+            <div class="avatar-aura" id="avatarAura"></div>
+            <img src="rohit_anime_hero.jpg" alt="Rohit Kumar Kuncha - Anime Tech Avatar" class="profile-photo active" id="avatarAnimeImg">
+            <img src="profile.jpg" alt="Rohit Kumar Kuncha" class="profile-photo" id="avatarRealImg">
+            
+            <!-- Hologram Chips -->
+            <div class="avatar-chips">
+              <span class="chip-item chip-azure">☁️ Azure IaC</span>
+              <span class="chip-item chip-k8s">🐳 Docker/K8s</span>
+              <span class="chip-item chip-cicd">⚡ CI/CD &lt;2m</span>
+            </div>
+
+            <!-- Sri Tech Reactive Speech Bubble -->
+            <div class="reactive-speech-bubble" id="reactiveBubble">
+              <span id="speechText">👋 Hey! Welcome to my Cloud &amp; DevOps space</span>
+            </div>
+
+            <div class="frame-tag">DevOps Engineer</div>
+          </div>
+
+          <div class="profile-body">
+            <h3 class="profile-name">Rohit Kumar Kuncha</h3>
+            <p class="profile-credentials">B.Tech CSE &bull; Cloud &amp; DevOps Specialist</p>
+
+            <div class="profile-stat-grid">
+              <div class="p-stat">
+                <span class="stat-number">Azure</span>
+                <span class="stat-label">Cloud Primary</span>
+              </div>
+              <div class="p-stat">
+                <span class="stat-number">Docker</span>
+                <span class="stat-label">&amp; Kubernetes</span>
+              </div>
+              <div class="p-stat">
+                <span class="stat-number">CI/CD</span>
+                <span class="stat-label">YAML Automation</span>
+              </div>
+            </div>
+
+            <div class="profile-tags">
+              <span class="tag">Azure Pipelines</span>
+              <span class="tag">ACR &amp; App Services</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">PowerShell IaC</span>
+              <span class="tag">Java &amp; Python</span>
+              <span class="tag">PyTorch MLOps</span>
+            </div>
+
+            <div class="terminal-micro">
+              <div class="term-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span> rohit@azure-devops:~</div>
+              <div class="term-line"><span class="prompt">$</span> az deployment group create --template-file infra.bicep</div>
+              <div class="term-line success">&gt; Provisioning: 100% | VMs: 2/2 Healthy | ALB: Active</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Value Drivers: What Makes Rohit Stand Out to Engineering Teams -->
+  <section class="section enterprise-value-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Candidate Value &amp; Engineering Mindset</span>
+        <h2 class="section-title">What I Bring to Modern Engineering Teams</h2>
+        <p class="section-sub">Bridging customer-centric reliability with resilient cloud automation, Infrastructure as Code, and production-tested CI/CD pipelines.</p>
+        <div class="section-line mx-auto"></div>
+      </div>
+
+      <div class="value-matrix-grid">
+        <div class="val-card glass-panel">
+          <div class="val-header">
+            <span class="val-num">01</span>
+            <span class="val-badge">CI/CD Automation</span>
+          </div>
+          <h3>Zero-Touch Automated Delivery Pipelines</h3>
+          <p>Tired of manual releases and deployment drift? I architect multi-stage Azure Pipelines YAML workflows that automate linting, Docker image building, ACR versioning, and zero-downtime rollouts.</p>
+          <ul class="val-points">
+            <li>Integrated automated smoke tests reducing MTTD to &lt; 2 minutes</li>
+            <li>Multi-stage environment promotion (Dev &rarr; Staging &rarr; Production) with approval gates</li>
+            <li>Lightweight Nginx Docker images hardened with OWASP security headers</li>
+          </ul>
+        </div>
+
+        <div class="val-card glass-panel">
+          <div class="val-header">
+            <span class="val-num">02</span>
+            <span class="val-badge">High Availability</span>
+          </div>
+          <h3>99.95% Resilient Cloud Infrastructure</h3>
+          <p>Designing infrastructure for fault-tolerance. Skilled in configuring Azure Availability Sets, Standard Load Balancers with TCP health probes, and isolated Network Security Groups (NSGs).</p>
+          <ul class="val-points">
+            <li>Automated VM &amp; network provisioning via PowerShell and Azure CLI in under 6 minutes</li>
+            <li>Traffic redirection around unhealthy instances using automated health probes</li>
+            <li>Strict Entra ID RBAC resource group isolation to enforce least privilege</li>
+          </ul>
+        </div>
+
+        <div class="val-card glass-panel">
+          <div class="val-header">
+            <span class="val-num">03</span>
+            <span class="val-badge">Developer-First</span>
+          </div>
+          <h3>Deep Programming Acumen (Java &amp; Python)</h3>
+          <p>Unlike pure ops administrators, I understand application code. Proficient in Java OOP, JVM memory management, Maven/Gradle, and Python backend services, making collaboration with devs seamless.</p>
+          <ul class="val-points">
+            <li>Debugs container memory leaks, JVM heap allocations, and garbage collection</li>
+            <li>Builds RESTful Node.js and Python FastAPI microservices</li>
+            <li>Writes maintainable automated tests and deployment health checks</li>
+          </ul>
+        </div>
+
+        <div class="val-card glass-panel">
+          <div class="val-header">
+            <span class="val-num">04</span>
+            <span class="val-badge">MLOps &amp; AI</span>
+          </div>
+          <h3>Production MLOps &amp; Deep Learning Deployments</h3>
+          <p>Developed and deployed an end-to-end cattle disease diagnostic platform (93% accuracy) with U-Net lesion segmentation and ResNet-50 transfer learning, containerized in Docker with FastAPI on AWS S3.</p>
+          <ul class="val-points">
+            <li>Containerized model inference workflows with sub-second API responses</li>
+            <li>Dataset preprocessing, normalization, and balanced loss functions</li>
+            <li>Model checkpointing and cloud artifact management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive CI/CD Pipeline Simulator (SHOW COMPANIES WHAT HE'S WORTH) -->
+  <section class="section pipeline-demo-section" id="pipeline-demo">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">Interactive Live Simulator</span>
+        <h2 class="section-title">Experience Rohit&rsquo;s Cloud &amp; DevOps Pipelines in Action</h2>
+        <p class="section-sub">Trigger simulated live pipelines to watch code linting, Docker builds, Azure Container Registry pushes, load-balancer failovers, and MLOps inference.</p>
+        <div class="section-line mx-auto"></div>
+      </div>
+
+      <div class="pipeline-widget glass-panel">
+        <div class="widget-toolbar">
+          <div class="pipeline-switcher">
+            <button class="pipe-tab active" data-pipe="cicd">1. Azure DevOps CI/CD Pipeline</button>
+            <button class="pipe-tab" data-pipe="ha">2. Azure High-Availability Load Balancer</button>
+            <button class="pipe-tab" data-pipe="mlops">3. Deep Learning MLOps (93% Accuracy)</button>
+          </div>
+          <button class="btn btn-sm btn-primary" id="runPipelineBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <span id="runBtnLabel">Run Live Simulation</span>
+          </button>
+        </div>
+
+        <div class="pipeline-content" id="pipelineContent">
+          <!-- Dynamically generated via app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills & Stack Grid -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Technical Competencies</span>
+        <h2 class="section-title">Skills, Tools &amp; Technologies</h2>
+        <p class="section-sub">A verified engineering stack combining cloud platforms, container orchestrators, IaC tooling, and programming languages.</p>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-filter">
+        <button class="s-filter-btn active" data-filter="all">All Disciplines</button>
+        <button class="s-filter-btn" data-filter="cloud">Cloud &amp; DevOps</button>
+        <button class="s-filter-btn" data-filter="prog">Programming &amp; Backend</button>
+        <button class="s-filter-btn" data-filter="data">Data &amp; Machine Learning</button>
+        <button class="s-filter-btn" data-filter="ops">SysAdmin &amp; Operations</button>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        
+        <!-- Cloud & DevOps -->
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-icon">☁️</div>
+          <h3>Microsoft Azure</h3>
+          <p>Azure DevOps, Azure Container Registry (ACR), Azure App Services, Standard Load Balancers, Availability Sets, Entra ID (Azure AD), Role-Based Access Control (RBAC).</p>
+          <div class="skill-tags">
+            <span>Azure DevOps</span>
+            <span>ACR</span>
+            <span>App Services</span>
+            <span>Load Balancer</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-icon">🐳</div>
+          <h3>Docker &amp; Containers</h3>
+          <p>Multi-stage Docker builds, lightweight Nginx web servers, image optimization, security hardening with custom HTTP headers, container lifecycle management, Docker Compose.</p>
+          <div class="skill-tags">
+            <span>Multi-Stage Builds</span>
+            <span>Nginx Containers</span>
+            <span>Security Hardening</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-icon">☸️</div>
+          <h3>Kubernetes &amp; Orchestration</h3>
+          <p>Deployments, Pods, Services, ConfigMaps, Secrets, horizontal pod autoscaling principles, ingress controllers, cluster service networking, and rolling zero-downtime updates.</p>
+          <div class="skill-tags">
+            <span>Deployments</span>
+            <span>Services</span>
+            <span>Cluster Architecture</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-icon">⚙️</div>
+          <h3>CI/CD Pipeline Automation</h3>
+          <p>Azure Pipelines YAML, multi-stage pipelines (Build &rarr; Test &rarr; Release), environment promotion with manual approval gates, automated smoke tests (&lt;2 min MTTD).</p>
+          <div class="skill-tags">
+            <span>Azure Pipelines YAML</span>
+            <span>Smoke Testing</span>
+            <span>Release Gates</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-icon">📜</div>
+          <h3>Infrastructure as Code (IaC)</h3>
+          <p>PowerShell scripting and Azure CLI automation provisioning complete virtual networks, firewalls, subnets, and load balancers in under 6 minutes from a single command.</p>
+          <div class="skill-tags">
+            <span>PowerShell</span>
+            <span>Azure CLI</span>
+            <span>Network Automation</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-icon">🟧</div>
+          <h3>Amazon Web Services (AWS)</h3>
+          <p>VPC network design, EC2 instances, Application Load Balancers (ALB), Auto Scaling groups, Amazon RDS (Multi-AZ), S3 bucket storage, and event-driven Lambda/SQS/SNS workflows.</p>
+          <div class="skill-tags">
+            <span>VPC &bull; EC2</span>
+            <span>ALB &bull; Auto Scaling</span>
+            <span>S3 &bull; RDS</span>
+          </div>
+        </div>
+
+        <!-- Programming & Backend -->
+        <div class="skill-card" data-cat="prog">
+          <div class="skill-icon">☕</div>
+          <h3>Java Development</h3>
+          <p>Object-Oriented Programming (OOP), SOLID design principles, exception handling, JVM memory architecture &amp; Garbage Collection tuning, Maven &amp; Gradle build systems.</p>
+          <div class="skill-tags">
+            <span>Java Full Stack</span>
+            <span>JVM &bull; GC Tuning</span>
+            <span>SOLID &bull; Maven</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-cat="prog">
+          <div class="skill-icon">🐍</div>
+          <h3>Python &amp; FastAPI</h3>
+          <p>Python 3 scripting for automation, FastAPI and Flask microservice APIs, data handling, PyTorch deep learning integration, and cloud automation utilities.</p>
+          <div class="skill-tags">
+            <span>Python 3</span>
+            <span>FastAPI</span>
+            <span>PyTorch</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-cat="prog">
+          <div class="skill-icon">🌐</div>
+          <h3>JavaScript &amp; Node.js</h3>
+          <p>Modern ES6+ JavaScript, Node.js backend development, asynchronous event loops (Promises, Async/Await), RESTful APIs, JSON parsing, Express.js web services.</p>
+          <div class="skill-tags">
+            <span>Node.js</span>
+            <span>REST APIs</span>
+            <span>Express</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-cat="prog">
+          <div class="skill-icon">🗄️</div>
+          <h3>SQL &amp; Relational Databases</h3>
+          <p>PostgreSQL, MySQL, relational schema modeling, advanced joins, Common Table Expressions (CTEs), query performance optimization, and database indexing.</p>
+          <div class="skill-tags">
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>Query Optimization</span>
+          </div>
+        </div>
+
+        <!-- Data & Machine Learning -->
+        <div class="skill-card" data-cat="data">
+          <div class="skill-icon">🧠</div>
+          <h3>Deep Learning &amp; Computer Vision</h3>
+          <p>Convolutional Neural Networks (CNNs), U-Net architectures for semantic segmentation, ResNet-50 transfer learning, custom loss functions (Dice Loss, Weighted Cross-Entropy).</p>
+          <div class="skill-tags">
+            <span>U-Net</span>
+            <span>ResNet-50</span>
+            <span>PyTorch</span>
+            <span>93% Accuracy</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-cat="data">
+          <div class="skill-icon">📊</div>
+          <h3>Power BI &amp; Analytics</h3>
+          <p>Interactive dashboard creation, Power Query data transformation, DAX calculated measures, multi-table dimensional data modeling, and business KPI tracking.</p>
+          <div class="skill-tags">
+            <span>Power BI</span>
+            <span>DAX</span>
+            <span>Power Query</span>
+          </div>
+        </div>
+
+        <!-- SysAdmin & Operations -->
+        <div class="skill-card" data-cat="ops">
+          <div class="skill-icon">🐧</div>
+          <h3>Linux System Administration</h3>
+          <p>Ubuntu and CentOS package management, bash shell scripting, systemctl service daemons, SSH key configuration, file permissions, vim editor, and server hardening.</p>
+          <div class="skill-tags">
+            <span>Bash Scripting</span>
+            <span>Systemctl</span>
+            <span>SSH &bull; Hardening</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-cat="ops">
+          <div class="skill-icon">🎧</div>
+          <h3>Enterprise Customer Operations</h3>
+          <p>Experience at Teleperformance: First Contact Resolution (FCR), de-escalation of complex technical inquiries, CRM workflows, strict compliance protocols, CSAT and AHT metrics.</p>
+          <div class="skill-tags">
+            <span>Teleperformance</span>
+            <span>FCR &bull; CSAT</span>
+            <span>De-escalation</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Technical Projects -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Production Portfolio</span>
+        <h2 class="section-title">Featured DevOps &amp; Engineering Projects</h2>
+        <p class="section-sub">Real-world implementations solving uptime, deployment speed, automated testing, and scalable architecture challenges.</p>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1: Space Defender Azure CI/CD -->
+        <div class="project-card glass-panel">
+          <div class="proj-badge azure-badge">Azure DevOps &bull; CI/CD &bull; Containers</div>
+          <h3 class="proj-title">Space Defender &mdash; End-to-End Azure DevOps CI/CD Pipeline</h3>
+          <p class="proj-time">2026 &bull; Cloud Automation</p>
+          <p class="proj-desc">
+            Engineered a completely automated multi-stage build-and-release pipeline using Azure Pipelines YAML that triggers automatically on code pushes with zero manual intervention.
+          </p>
+          <ul class="proj-features">
+            <li>Packaged the HTML5/JS app into a lightweight Nginx Docker container hardened with custom security headers.</li>
+            <li>Automated building, version tagging, and pushing Docker images to Azure Container Registry (ACR).</li>
+            <li>Configured secure Azure DevOps service connections using Entra ID service principals with scoped permissions.</li>
+            <li>Implemented automated post-deployment smoke tests that reduced Mean Time to Detect (MTTD) failed deployments to under 2 minutes.</li>
+          </ul>
+          <div class="proj-tech-stack">
+            <span>Azure DevOps YAML</span>
+            <span>Docker</span>
+            <span>Azure Container Registry</span>
+            <span>Azure App Services</span>
+            <span>Entra ID</span>
+            <span>Smoke Testing</span>
+          </div>
+        </div>
+
+        <!-- Project 2: High Availability Load-Balanced Azure Infra -->
+        <div class="project-card glass-panel">
+          <div class="proj-badge ia-badge">Infrastructure as Code &bull; High Availability</div>
+          <h3 class="proj-title">High-Availability Load-Balanced Web Infrastructure on Azure</h3>
+          <p class="proj-time">2026 &bull; Cloud Resilience</p>
+          <p class="proj-desc">
+            Authored PowerShell and Azure CLI automation scripts provisioning full cloud infrastructure (virtual network, subnets, VMs, firewalls, and load balancer) in under 6 minutes.
+          </p>
+          <ul class="proj-features">
+            <li>Grouped VMs in an Azure Availability Set to protect uptime against hardware host failures, targeting 99.95% SLA.</li>
+            <li>Deployed Azure Standard Load Balancer with TCP health probes routing traffic dynamically away from unhealthy instances.</li>
+            <li>Enforced strict Network Security Group (NSG) ingress/egress rules isolating VMs from direct public internet exposure.</li>
+            <li>Applied Azure RBAC via Entra ID, granting least-privilege operations access strictly scoped to the resource group.</li>
+          </ul>
+          <div class="proj-tech-stack">
+            <span>PowerShell IaC</span>
+            <span>Azure CLI</span>
+            <span>Azure Standard ALB</span>
+            <span>Availability Sets</span>
+            <span>NSG Firewalls</span>
+            <span>RBAC</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Lumpy Skin Disease Detection (MLOps) -->
+        <div class="project-card glass-panel">
+          <div class="proj-badge ml-badge">Deep Learning &bull; Computer Vision &bull; MLOps</div>
+          <h3 class="proj-title">Automated Cattle Disease Detection &amp; Segmentation Platform</h3>
+          <p class="proj-time">2023 &bull; AI / MLOps</p>
+          <p class="proj-desc">
+            Designed and trained a two-stage deep learning pipeline for automated cattle skin disease detection across a dataset of 5,000+ high-resolution images, achieving 93% accuracy.
+          </p>
+          <ul class="proj-features">
+            <li>Engineered a U-Net architecture for precision lesion segmentation and a pre-trained ResNet-50 for disease classification.</li>
+            <li>Trained models using combined Binary Cross-Entropy/Dice Loss and Weighted Cross-Entropy to handle class imbalance.</li>
+            <li>Containerized the PyTorch inference engine in Docker and exposed it via a high-performance FastAPI service.</li>
+            <li>Managed model checkpoints and training artifacts seamlessly in AWS S3 object storage.</li>
+          </ul>
+          <div class="proj-tech-stack">
+            <span>PyTorch</span>
+            <span>U-Net</span>
+            <span>ResNet-50</span>
+            <span>Docker</span>
+            <span>FastAPI</span>
+            <span>AWS S3</span>
+            <span>93% Accuracy</span>
+          </div>
+        </div>
+
+        <!-- Project 4: AWS 3-Tier Application Deployment -->
+        <div class="project-card glass-panel">
+          <div class="proj-badge aws-badge">AWS Architecture &bull; Scalability</div>
+          <h3 class="proj-title">AWS 3-Tier Enterprise Scalable Architecture</h3>
+          <p class="proj-time">2025 &bull; Hands-on Production Training (PaperLive)</p>
+          <p class="proj-desc">
+            Designed and deployed a production-grade 3-tier web architecture on AWS spanning public and private subnets across multiple Availability Zones.
+          </p>
+          <ul class="proj-features">
+            <li>Configured custom VPC, EC2 Auto Scaling groups, Application Load Balancer (ALB), and Amazon RDS MySQL Multi-AZ.</li>
+            <li>Implemented event-driven serverless messaging with AWS Lambda, SQS, and SNS to decouple application workloads.</li>
+            <li>Ensured database and backend tiers are strictly unreachable from the public web via private security groups.</li>
+          </ul>
+          <div class="proj-tech-stack">
+            <span>AWS VPC</span>
+            <span>EC2 Auto Scaling</span>
+            <span>ALB</span>
+            <span>Amazon RDS</span>
+            <span>Lambda &bull; SQS &bull; SNS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Timeline -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Professional History</span>
+        <h2 class="section-title">Work Experience &amp; Industry Exposure</h2>
+        <p class="section-sub">Real-world operational expertise handling high-pressure client requirements, incident resolution, and compliance protocols.</p>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card glass-panel">
+            <div class="t-card-header">
+              <div class="t-role-info">
+                <span class="t-badge tp-badge">Enterprise Operations &amp; Support</span>
+                <h3 class="t-title">Customer Service Executive</h3>
+                <h4 class="t-company">Teleperformance &bull; Hyderabad, Telangana, India</h4>
+              </div>
+              <div class="t-period">Nov 2024 &ndash; Nov 2025</div>
+            </div>
+
+            <p class="t-summary">
+              Handled mission-critical customer operations in a high-volume enterprise environment, managing technical, account, and billing escalations while enforcing strict data security protocols.
+            </p>
+
+            <ul class="t-duties">
+              <li><strong>First Contact Resolution (FCR):</strong> Resolved technical and billing issues on first contact, eliminating recurring repeat tickets.</li>
+              <li><strong>Incident De-escalation:</strong> Applied active problem diagnosis and clear communication to turn high-stress operational escalations into positive resolutions.</li>
+              <li><strong>Security &amp; Verification Compliance:</strong> Strictly adhered to mandatory customer data verification protocols and data protection guidelines.</li>
+              <li><strong>CRM Documentation:</strong> Maintained comprehensive, accurate incident notes and resolution steps in enterprise CRM systems.</li>
+              <li><strong>Performance Metrics:</strong> Consistently achieved Average Handle Time (AHT) and Customer Satisfaction (CSAT) quality targets.</li>
+            </ul>
+
+            <div class="t-skills-tags">
+              <span>Incident Resolution</span>
+              <span>CRM Systems</span>
+              <span>Compliance Protocols</span>
+              <span>FCR &bull; CSAT &bull; AHT</span>
+              <span>Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Credentials &amp; Education</span>
+        <h2 class="section-title">Academic Background &amp; Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card glass-panel featured-edu">
+          <div class="edu-badge">Degree</div>
+          <span class="edu-year">Graduated Jun 2024</span>
+          <h3 class="edu-degree">B.Tech in Computer Science &amp; Engineering</h3>
+          <h4 class="edu-inst">Visakha Institute of Engineering and Technology (VIET) &bull; Narava, Visakhapatnam</h4>
+          <p class="edu-details">
+            Rigorous 4-year curriculum covering Algorithms, Operating Systems, Computer Networks, Database Management Systems, Software Engineering, and Machine Learning.
+          </p>
+        </div>
+
+        <div class="edu-card glass-panel">
+          <div class="edu-badge">Technical Diploma</div>
+          <span class="edu-year">Graduated Apr 2020</span>
+          <h3 class="edu-degree">Diploma in Electrical &amp; Electronics Engineering (DEEE)</h3>
+          <h4 class="edu-inst">Behara Technical Campus &bull; Narava, Visakhapatnam</h4>
+          <p class="edu-details">
+            Strong foundation in digital electronics, circuit theory, electrical machines, instrumentation, and analytical logic.
+          </p>
+        </div>
+      </div>
+
+      <!-- Certifications Grid -->
+      <div class="certs-grid" style="margin-top: 2.5rem;">
+        <div class="cert-card glass-panel">
+          <div class="cert-icon">☁️</div>
+          <div class="cert-content">
+            <h4>AWS Cloud Practitioner Essentials</h4>
+            <p class="cert-issuer">Amazon Web Services (AWS Skill Builder) &bull; Jun 2026</p>
+            <p class="cert-desc">Verified fundamental mastery of AWS Cloud infrastructure, core services (EC2, S3, RDS, VPC), cloud security, pricing models, and cloud architectural best practices.</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-panel">
+          <div class="cert-icon">🚀</div>
+          <div class="cert-content">
+            <h4>DevOps, AWS, Azure &amp; GCP Certification</h4>
+            <p class="cert-issuer">PaperLive Learning &bull; 2025</p>
+            <p class="cert-desc">Comprehensive hands-on training across multi-cloud deployments, Docker containerization, Kubernetes clusters, Jenkins &amp; Azure DevOps CI/CD pipelines.</p>
+          </div>
+        </div>
+
+        <div class="cert-card glass-panel">
+          <div class="cert-icon">☕</div>
+          <div class="cert-content">
+            <h4>Java Full Stack Development Certification</h4>
+            <p class="cert-issuer">Professional Course Certification</p>
+            <p class="cert-desc">Mastery of Core Java, OOP principles, RESTful microservices, MySQL databases, frontend HTML/CSS/JavaScript, and Maven dependency management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Hiring Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card glass-panel">
+        <div class="contact-header text-center">
+          <span class="section-eyebrow">Let&rsquo;s Connect</span>
+          <h2 class="section-title">Ready to Accelerate Your Cloud Infrastructure</h2>
+          <p class="section-sub">
+            Actively seeking entry-to-mid level roles: <strong>Cloud Engineer</strong>, <strong>DevOps Engineer</strong>, <strong>SRE</strong>, or <strong>Platform Engineer</strong>.
+          </p>
+          <div class="section-line mx-auto"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-col">
+            <h3>Direct Contact Channels</h3>
+            <p>I am available for interviews and prompt discussions regarding full-time engineering opportunities.</p>
+
+            <div class="contact-methods">
+              <a href="mailto:kuncharohitkumar2@gmail.com" class="c-method-item">
+                <div class="cm-icon">✉️</div>
+                <div class="cm-content">
+                  <span class="cm-label">Primary Email</span>
+                  <span class="cm-val">kuncharohitkumar2@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+916281224094" class="c-method-item">
+                <div class="cm-icon">📞</div>
+                <div class="cm-content">
+                  <span class="cm-label">Direct Phone / WhatsApp</span>
+                  <span class="cm-val">+91 62812 24094</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/rj1825" target="_blank" rel="noopener noreferrer" class="c-method-item">
+                <div class="cm-icon">💻</div>
+                <div class="cm-content">
+                  <span class="cm-label">GitHub Profile</span>
+                  <span class="cm-val">github.com/rj1825</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/rohitkumarkuncha" target="_blank" rel="noopener noreferrer" class="c-method-item">
+                <div class="cm-icon">🔗</div>
+                <div class="cm-content">
+                  <span class="cm-label">LinkedIn Profile</span>
+                  <span class="cm-val">linkedin.com/in/rohitkumarkuncha</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="resume-download-box">
+              <h4>Download Official Resume</h4>
+              <p>Get a complete copy of Rohit Kumar Kuncha's verified DevOps &amp; Cloud resume in PDF format.</p>
+              <a href="resume.pdf" download="Rohit_Kumar_Kuncha_DevOps_Resume.pdf" class="btn btn-primary btn-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Direct Inquiry Form -->
+          <div class="contact-form-col">
+            <h3>Send an Interview Proposal or Message</h3>
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+              <div class="form-group">
+                <label for="cName">Your Name / Recruiter Name</label>
+                <input type="text" id="cName" class="form-control" placeholder="e.g. Alex Johnson (Engineering Lead)" required>
+              </div>
+
+              <div class="form-group">
+                <label for="cOrg">Company / Organization</label>
+                <input type="text" id="cOrg" class="form-control" placeholder="e.g. CloudTech Systems / FinTech Corp" required>
+              </div>
+
+              <div class="form-group">
+                <label for="cEmail">Your Work Email</label>
+                <input type="email" id="cEmail" class="form-control" placeholder="recruiter@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="cRole">Role Opportunity</label>
+                <select id="cRole" class="form-control">
+                  <option value="DevOps Engineer">DevOps Engineer</option>
+                  <option value="Cloud Engineer (Azure/AWS)">Cloud Engineer (Azure / AWS)</option>
+                  <option value="Site Reliability Engineer (SRE)">Site Reliability Engineer (SRE)</option>
+                  <option value="Platform Engineer">Platform Engineer</option>
+                  <option value="Java Full Stack / Software Engineer">Software Engineer / Java Backend</option>
+                  <option value="Machine Learning / MLOps Engineer">MLOps / Machine Learning Engineer</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cMessage">Message / Interview Schedule</label>
+                <textarea id="cMessage" class="form-control" rows="4" placeholder="Hi Rohit, we reviewed your Azure CI/CD and IaC projects. We'd like to schedule an interview..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send via Email Client</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+            <div id="formFeedback" class="form-feedback hidden"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="f-brand">&lt;/&gt; Rohit Kumar Kuncha</div>
+        <p class="f-tagline">Cloud &amp; DevOps Engineer &bull; Azure &bull; Docker &bull; Kubernetes &bull; CI/CD</p>
+      </div>
+
+      <div class="footer-right">
+        <p>&copy; 2026 Rohit Kumar Kuncha. Hosted on GitHub Pages.</p>
+        <p class="f-note">Visakhapatnam, Andhra Pradesh, India &bull; <a href="https://github.com/rj1825" style="color:var(--cyan-primary);">@rj1825</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

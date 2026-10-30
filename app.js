@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSkillsFilters();
   initPipelineSimulator();
   initContactCopy();
+  initInteractiveAvatar();
 });
 
 /* ==========================================================================
@@ -370,4 +371,98 @@ function showToast(msg) {
   setTimeout(() => {
     toast.classList.add('hidden');
   }, 3500);
+}
+
+
+/* ==========================================================================
+   5. Interactive Sri Tech Hero Avatar & 3-Zone Reactor
+   ========================================================================== */
+function initInteractiveAvatar() {
+  const btnAnime = document.getElementById('btnSwitchAnime');
+  const btnReal = document.getElementById('btnSwitchReal');
+  const imgAnime = document.getElementById('avatarAnimeImg');
+  const imgReal = document.getElementById('avatarRealImg');
+  const bubble = document.getElementById('reactiveBubble');
+  const speechText = document.getElementById('speechText');
+  const profileCard = document.getElementById('interactiveProfileCard');
+  const heroSection = document.getElementById('hero');
+
+  if (!btnAnime || !btnReal || !imgAnime || !imgReal) return;
+
+  // Toggle View
+  btnAnime.addEventListener('click', () => {
+    btnAnime.classList.add('active');
+    btnReal.classList.remove('active');
+    imgAnime.classList.add('active');
+    imgReal.classList.remove('active');
+    triggerSpeech("⚡ Switched to Anime Tech Avatar!");
+  });
+
+  btnReal.addEventListener('click', () => {
+    btnReal.classList.add('active');
+    btnAnime.classList.remove('active');
+    imgReal.classList.add('active');
+    imgAnime.classList.remove('active');
+    triggerSpeech("📷 Switched to Real Profile Photo!");
+  });
+
+  function triggerSpeech(msg, holdMs = 2600) {
+    if (!bubble || !speechText) return;
+    speechText.textContent = msg;
+    bubble.classList.add('active');
+    clearTimeout(triggerSpeech.timer);
+    triggerSpeech.timer = setTimeout(() => {
+      bubble.classList.remove('active');
+    }, holdMs);
+  }
+
+  // 3-Zone Cursor Reactivity over Hero
+  if (heroSection) {
+    let lastZone = null;
+    heroSection.addEventListener('mousemove', (e) => {
+      if (window.innerWidth < 900) return;
+      const rect = heroSection.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+
+      let zone = 'center';
+      if (x < 0.35) zone = 'left';
+      else if (x > 0.65) zone = 'right';
+
+      if (zone === lastZone) return;
+      lastZone = zone;
+
+      if (zone === 'left') {
+        triggerSpeech("☁️ Inspecting cloud metrics & IaC provisioning?");
+      } else if (zone === 'right') {
+        triggerSpeech("⚡ Checking out the interactive avatar & CI/CD?");
+      } else {
+        triggerSpeech("👋 Hey! Welcome to my Cloud & DevOps space!");
+      }
+    }, { passive: true });
+
+    heroSection.addEventListener('mouseleave', () => {
+      lastZone = null;
+      if (bubble) bubble.classList.remove('active');
+    });
+  }
+
+  // Smooth 3D tilt on profile card hover
+  if (profileCard) {
+    profileCard.addEventListener('mousemove', (e) => {
+      const rect = profileCard.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      const activeImg = profileCard.querySelector('.profile-photo.active');
+      if (activeImg) {
+        activeImg.style.transform = `perspective(800px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg) scale(1.02)`;
+      }
+    });
+
+    profileCard.addEventListener('mouseleave', () => {
+      const activeImg = profileCard.querySelector('.profile-photo.active');
+      if (activeImg) {
+        activeImg.style.transform = 'perspective(800px) rotateY(0deg) rotateX(0deg) scale(1)';
+      }
+    });
+  }
 }
